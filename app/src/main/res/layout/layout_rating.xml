@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scatter="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.intrusoft.scatter.PieChart
+        android:layout_margin="10dp"
+        android:id="@+id/pie_chart"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        scatter:aboutTextSize="30"
+        scatter:aboutTextColor="@color/white"
+        scatter:centerColor="@color/orange_500"
+        scatter:chartColor="@color/white"
+        scatter:equalPartition="false"
+        scatter:textColor="@color/black" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/paramNameTv"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:text="Rating"
+        android:layout_height="wrap_content" />
+</LinearLayout>

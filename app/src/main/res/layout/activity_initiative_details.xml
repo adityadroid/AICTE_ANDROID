@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:scatter="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lokeshsoni.dashboard.InitiativeDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/cover"
+        android:scaleType="center"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:text="Campus Cleaniness"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+               android:layout_height="wrap_content" />
+   <android.support.v7.widget.CardView
+       android:layout_margin="8dp"
+       app:cardElevation="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:background="@color/white"
+           android:padding="16dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:padding="5dp"
+               android:layout_width="match_parent"
+               android:text="PARAMETERS"
+               android:background="@color/white"
+               android:textColor="@color/black"
+               android:fontFamily="sans-serif-condensed"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:layout_height="wrap_content" />
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/recyclerView"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+         </android.support.v7.widget.RecyclerView>
+       </LinearLayout>
+   </android.support.v7.widget.CardView>
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/viewRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="VIEW RATINGS"
+                android:theme="@style/ButtonPrimary"
+                 />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
